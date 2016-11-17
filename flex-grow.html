@@ -6,19 +6,31 @@
 	<script src="js/flexible.js"></script>
 	<link rel="stylesheet" href="css/common.css">
 	<style>
-		.container{
-			height:5.3333rem;
-		}
 		.ct1 .second{
 			flex-grow:1;
+		}
+
+		.ct2 .second{
+			flex-grow:2;
+		}
+		.ct2 .third{
+			flex-grow:3;
 		}
 	</style>
 </head>
 <body>
-	<h1>元素排列(flex-grow)</h1>
+	<h1>父元素剩余空间的分配比例(flex-grow)</h1>
 
-	<h2>默认：从左到右(row)</h2>
+	<h2>让第二个占剩余空间的全部(.second{flex-grow:1;})</h2>
 	<ul class="container ct1">
+		<li class="first">1</li>
+		<li class="second">2</li>
+		<li class="third">3</li>
+	</ul>
+
+	<h2>让第二个占剩余空间的2/5(.second{flex-grow:2;})</h2>
+	<h2>让第三个占剩余空间的3/5(.third{flex-grow:3;})</h2>
+	<ul class="container ct2">
 		<li class="first">1</li>
 		<li class="second">2</li>
 		<li class="third">3</li>

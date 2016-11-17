@@ -11,7 +11,7 @@
         '            <li><a href="flex-direction.html">元素排列 | flex-direction</a></li>'+
         '            <li><a href="flex-wrap.html">元素换行 | flex-wrap</a></li>'+
         '            <li><a href="order.html">元素排序 | order</a></li>'+
-        '            <li><a href="flex-grow.html">元素等分 | flex-grow</a></li>'+
+        '            <li><a href="flex-grow.html">剩余空间比例分配 | flex-grow</a></li>'+
         '        </ul>'+
         '    </span>'+
         '</div>';
