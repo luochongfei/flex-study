@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>元素是否换行</title>
+	<script src="js/flexible.js"></script>
+	<link rel="stylesheet" href="css/common.css">
+	<style>
+		.no-wrap{
+			flex-wrap:nowrap;
+		}
+		.wrap{
+			flex-wrap:wrap;
+		}
+		.wrap-reverse{
+			flex-wrap:wrap-reverse;
+		}
+	</style>
+</head>
+<body>
+	<h1>元素换行(flex-wrap)</h1>
+
+	<h2>默认：不换行(no-wrap)</h2>
+	<ul class="container">
+		<li class="first">1</li>
+		<li class="second">2</li>
+		<li class="third">3</li>
+		<li class="first">4</li>
+		<li class="second">5</li>
+		<li class="third">6</li>
+		<li class="first">7</li>
+		<li class="second">8</li>
+		<li class="third">9</li>
+	</ul>
+
+	<h2>自动换行(wrap)</h2>
+	<ul class="container wrap">
+		<li class="first">1</li>
+		<li class="second">2</li>
+		<li class="third">3</li>
+		<li class="first">4</li>
+		<li class="second">5</li>
+		<li class="third">6</li>
+		<li class="first">7</li>
+		<li class="second">8</li>
+		<li class="third">9</li>
+	</ul>
+
+	<h2>换行后 行从下往上排列(wrap-reverse)</h2>
+	<ul class="container wrap-reverse">
+		<li class="first">1</li>
+		<li class="second">2</li>
+		<li class="third">3</li>
+		<li class="first">4</li>
+		<li class="second">5</li>
+		<li class="third">6</li>
+		<li class="first">7</li>
+		<li class="second">8</li>
+		<li class="third">9</li>
+		<li class="first">10</li>
+		<li class="second">11</li>
+		<li class="third">12</li>
+		<li class="first">13</li>
+		<li class="second">14</li>
+		<li class="third">15</li>
+	</ul>
+
+	<script src="js/com-nav.js"></script>
+</body>
+</html>

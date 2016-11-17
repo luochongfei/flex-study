@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>元素排列顺序</title>
+	<script src="js/flexible.js"></script>
+	<link rel="stylesheet" href="css/common.css">
+	<style>
+		.ct1 .third{
+			order:-1;
+		}
+		.ct2 .second{
+			order:1;
+		}
+		.ct3 .first{
+			order:2;
+		}
+		.ct3 .second{
+			order:1;
+		}
+	</style>
+</head>
+<body>
+	<h1>子元素排序(order)</h1>
+	<ol>
+		<li>所有元素默认order是0</li>
+		<li>如果给元素添加order值大于0，则元素会排到所有没order的末尾，如果有其他设置过order的元素，那order值越大则排在越后</li>
+		<li>如果给元素添加order值小于0，则元素会排列到所有没order的开始，如果有其他设置过order的元素，那order值越小则排在越前</li>
+	</ol>
+
+	<h2>让3号排到最前( .third{order:-1} )</h2>
+	<ul class="container ct1">
+		<li class="first">1</li>
+		<li class="second">2</li>
+		<li class="third">3</li>
+	</ul>
+
+	<h2>让2号排到末尾( .second{order:1} )</h2>
+	<ul class="container ct2">
+		<li class="first">1</li>
+		<li class="second">2</li>
+		<li class="third">3</li>
+		<li class="fourth">4</li>
+	</ul>
+
+	<h2>让1、2号都排到末尾，1号最后 <br> ( .first{order:2} .second{order:1} )</h2>
+	<ul class="container ct3">
+		<li class="first">1</li>
+		<li class="second">2</li>
+		<li class="third">3</li>
+		<li class="fourth">4</li>
+	</ul>
+
+	<script src="js/com-nav.js"></script>
+</body>
+</html>

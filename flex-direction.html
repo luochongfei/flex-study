@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>元素排列顺序</title>
+	<script src="js/flexible.js"></script>
+	<link rel="stylesheet" href="css/common.css">
+	<style>
+		.container{
+			height:5.3333rem;
+		}
+		.row{
+			flex-direction:row;
+		}
+		.row-reverse{
+			flex-direction:row-reverse;
+		}
+		.column{
+			flex-direction:column;
+		}
+		.column-reverse{
+			flex-direction:column-reverse;
+		}
+	</style>
+</head>
+<body>
+	<h1>元素排列(flex-direction)</h1>
+
+	<h2>默认：从左到右(row)</h2>
+	<ul class="container row">
+		<li class="first">1</li>
+		<li class="second">2</li>
+		<li class="third">3</li>
+	</ul>
+
+	<h2>从右到左(row-reverse)</h2>
+	<ul class="container row-reverse">
+		<li class="first">1</li>
+		<li class="second">2</li>
+		<li class="third">3</li>
+	</ul>
+
+	<h2>从上到下(column)</h2>
+	<ul class="container column">
+		<li class="first">1</li>
+		<li class="second">2</li>
+		<li class="third">3</li>
+	</ul>
+
+	<h2>从下到上(column-reverse)</h2>
+	<ul class="container column-reverse">
+		<li class="first">1</li>
+		<li class="second">2</li>
+		<li class="third">3</li>
+	</ul>
+
+	<script src="js/com-nav.js"></script>
+</body>
+</html>

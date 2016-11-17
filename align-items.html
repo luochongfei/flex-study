@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>垂直分布</title>
+	<script src="js/flexible.js"></script>
+	<link rel="stylesheet" href="css/common.css">
+	<style>
+		.container{
+			height:5.3333rem;
+		}
+		.flex-start{
+			align-items:stretch;
+		}
+		.center{
+			align-items:center;
+		}
+		.flex-end{
+			align-items:flex-end;
+		}
+	</style>
+</head>
+<body>
+	<h1>垂直分布方式(align-items)</h1>
+
+	<h2>起始对齐(flex-start)</h2>
+	<ul class="container flex-start">
+		<li class="first"></li>
+		<li class="second"></li>
+		<li class="third"></li>
+	</ul>
+
+	<h2>居中对齐(center)</h2>
+	<ul class="container center">
+		<li class="first"></li>
+		<li class="second"></li>
+		<li class="third"></li>
+	</ul>
+
+	<h2>末端对齐(flex-end)</h2>
+	<ul class="container flex-end">
+		<li class="first"></li>
+		<li class="second"></li>
+		<li class="third"></li>
+	</ul>
+
+	<script src="js/com-nav.js"></script>
+</body>
+</html>
