@@ -1,43 +1,70 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-	<meta charset="UTF-8">
-	<title>元素排列顺序</title>
-	<script src="js/flexible.js"></script>
-	<link rel="stylesheet" href="css/common.css">
-	<style>
-		.ct1 .second{
-			flex-grow:1;
-		}
+    <meta charset="UTF-8">
+    <title>元素排列顺序</title>
+    <script src="js/flexible.js"></script>
+    <link rel="stylesheet" href="css/common.css">
+    <style>
+        .ct1 .second{
+            flex-grow:1;
+        }
 
-		.ct2 .second{
-			flex-grow:2;
-		}
-		.ct2 .third{
-			flex-grow:3;
-		}
-	</style>
+        .ct2 .second{
+            flex-grow:2;
+        }
+        .ct2 .third{
+            flex-grow:3;
+        }
+
+        .ct3 .second{
+            flex-grow:1;
+        }
+
+        .ct4 li{
+            flex-grow:1;
+        }
+    </style>
 </head>
 <body>
-	<h1>父元素剩余空间的分配比例(flex-grow)</h1>
+    <h1>父元素剩余空间的分配比例(flex-grow)</h1>
+    <ol>
+        <li>剩余空间：父元素宽度-子元素原本宽度之和</li>
+        <li>占比分母：所有子元素<code>flex-grow</code>值相加的总和</li>
+        <li>设置了<code>flex-grow</code>的元素最终宽度是【原本宽度+剩余空间*(该元素<code>flex-grow</code>值/占比分母)】</li>
+        <li>元素默认<code>flex-grow</code>值是0</li>
+    </ol>
 
-	<h2>让第二个占剩余空间的全部(.second{flex-grow:1;})</h2>
-	<ul class="container ct1">
-		<li class="first">1</li>
-		<li class="second">2</li>
-		<li class="third">3</li>
-	</ul>
+    <h2>让第二个占剩余空间的全部(.second{flex-grow:1;})</h2>
+    <ul class="container ct1">
+        <li class="first">1</li>
+        <li class="second">2</li>
+        <li class="third">3</li>
+    </ul>
 
-	<h2>让第二个占剩余空间的2/5(.second{flex-grow:2;})</h2>
-	<h2>让第三个占剩余空间的3/5(.third{flex-grow:3;})</h2>
-	<ul class="container ct2">
-		<li class="first">1</li>
-		<li class="second">2</li>
-		<li class="third">3</li>
-	</ul>
+    <h2>让第二个占剩余空间的2/5(.second{flex-grow:2;})</h2>
+    <h2>让第三个占剩余空间的3/5(.third{flex-grow:3;})</h2>
+    <ul class="container ct2">
+        <li class="first">1</li>
+        <li class="second">2</li>
+        <li class="third">3</li>
+    </ul>
 
-	
 
-	<script src="js/com-nav.js"></script>
+    <h2>让第二个占满剩余空间(.second{flex-grow:1;})</h2>
+    <ul class="container ct3">
+        <li class="first">1</li>
+        <li class="second">2</li>
+    </ul>
+
+    <h2>让3个平分剩余空间(li{flex-grow:1;})</h2>
+    <ul class="container ct4">
+        <li class="first">1</li>
+        <li class="second">2</li>
+        <li class="third">3</li>
+    </ul>
+    
+
+    <script src="js/com-nav.js"></script>
 </body>
 </html>

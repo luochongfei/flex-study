@@ -9,12 +9,12 @@ h1{
 	font-size:.5333rem 
 }
 h2{
-	padding:.2667rem 0; 
+	margin:.2667rem 0; 
 	max-height: 10rem;
 	font-size: .4rem;   
 	color:#212121; 
 	font-weight: normal; 
-	text-align: center;
+	text-indent:.2rem;
 }
 p{
 	padding:.2rem; 
@@ -22,6 +22,13 @@ p{
 	line-height: 1.65; 
 	font-size: .32rem; 
 	color:#666;
+}
+code{
+	padding:2px 5px;
+	border-radius: .0533rem;
+	font-family: 'Consolas';
+	background-color: #272822;
+	color:#acdb74;
 }
 ol{
 	max-height: 10rem; 
@@ -41,8 +48,8 @@ ol li{
 	background-color: #eee;
 }
 .container li{
-	width:1.6rem;
-	height:1.6rem;
+	width:1.6rem;/*120px*/
+	height:1.6rem;/*120px*/
 	text-align: center;
 	line-height: 1.6rem;
 }

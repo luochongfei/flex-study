@@ -6,12 +6,13 @@
         '    <span>flex</span>'+
         '    <span class="nav-wrap">'+
         '        <ul>'+
-        '            <li><a href="justify-content.html">水平分布方式 | justify-content</a></li>'+
-        '            <li><a href="align-items.html">垂直分布方式 | align-items</a></li>'+
-        '            <li><a href="flex-direction.html">元素排列 | flex-direction</a></li>'+
-        '            <li><a href="flex-wrap.html">元素换行 | flex-wrap</a></li>'+
-        '            <li><a href="order.html">元素排序 | order</a></li>'+
-        '            <li><a href="flex-grow.html">剩余空间比例分配 | flex-grow</a></li>'+
+        '            <li><a href="justify-content.html">justify-content | 水平分布方式</a></li>'+
+        '            <li><a href="align-items.html">align-items | 垂直分布方式</a></li>'+
+        '            <li><a href="flex-direction.html">flex-direction | 元素排列</a></li>'+
+        '            <li><a href="flex-wrap.html">flex-wrap | 元素换行</a></li>'+
+        '            <li><a href="order.html">order | 元素排序</a></li>'+
+        '            <li><a href="flex-grow.html">flex-grow | 剩余空间比例分配</a></li>'+
+        '            <li><a href="flex-shrink.html">flex-shrink | 超出宽度压缩比例分配</a></li>'+
         '        </ul>'+
         '    </span>'+
         '</div>';
