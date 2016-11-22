@@ -10,9 +10,9 @@ body{padding-top:1.1333rem; transition:all linear .3s;}
 
 #com-nav .nav-wrap{position:absolute; right:0; top:0; height:1.2rem; width:1.2rem; }
 #com-nav .nav-wrap:after{content:"≡"; width:.9333rem; font-size: .8rem;}
-#com-nav .nav-wrap ul{display: none; position:absolute; top:1.2rem; right:0; width:7.3333rem; max-height:8.6667rem; overflow-y:auto; background-color: #0077C0;}
+#com-nav .nav-wrap ul{display: none; position:absolute; top:1.2rem; right:0; width:7.3333rem; max-height:8.6667rem; overflow-y:auto; background-color: #0077C0; }
 #com-nav .nav-wrap li{ color:#fff;}
-#com-nav .nav-wrap li a{max-height:3rem; display: block; padding-left:.4rem; border-top:.04rem solid #016fb2; color:#fff; text-decoration: none; font-size: .4rem; text-align: left;}
+#com-nav .nav-wrap li a{max-height:3rem; display: block; padding-left:.4rem; border-top:.04rem solid #016fb2; color:#fff; text-decoration: none; font-size: .4rem; text-align: left;overflow-x:hidden; white-space: nowrap; text-overflow: ellipsis;}
 #com-nav .nav-wrap li:first-child a{border-top:none;}
 
 #com-nav .nav-wrap.show{background-color: #0077C0; }

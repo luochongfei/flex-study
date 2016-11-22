@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>抽奖布局</title>
+    <script src="js/flexible.js"></script>
+    <link rel="stylesheet" href="css/common.css">
+    <style>
+        .ct1{height:10rem; flex-wrap:wrap;}
+        .ct1 li{ width:30%; height:33.33%; flex-grow:1; display:flex; justify-content:center; align-items:center; }
+        .ct1 li:nth-of-type(4){order:6;}
+        .ct1 li:nth-of-type(5){order:9;}
+        .ct1 li:nth-of-type(6){order:8;}
+        .ct1 li:nth-of-type(7){order:7;}
+    </style>
+</head>
+<body>
+    <h1>9宫格抽奖布局</h1>
+    <ol>
+        <li>父元素使用flex,设置高度与宽度一致,并设置子元素自动换行</li>
+        <li>子元素设置宽>=30%,高均为33.33%</li>
+        <li>为确保水平方向绝对平分，所有子元素添加flex-grow:1</li>
+        <li>使子元素内部子元素内容水平垂直居中，也使用flex</li>
+        <li>对部分子元素使用order调到合适的顺序</li>
+    </ol>
+    
+    <ul class="container ct1" style="">
+        <li class="first">1</li>
+        <li class="second">2</li>
+        <li class="third">3</li>
+        <li class="first">4</li>
+        <li class="second">5</li>
+        <li class="third">6</li>
+        <li class="first">7</li>
+        <li class="second">8</li>
+        <li class="third" style="background-color: #fff;">立即抽奖</li>
+    </ul>
+
+
+    <script src="js/com-nav.js"></script>
+</body>
+</html>

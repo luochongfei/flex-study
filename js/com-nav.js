@@ -6,13 +6,15 @@
         '    <span>flex</span>'+
         '    <span class="nav-wrap">'+
         '        <ul>'+
-        '            <li><a href="justify-content.html">justify-content | 水平分布方式</a></li>'+
-        '            <li><a href="align-items.html">align-items | 垂直分布方式</a></li>'+
-        '            <li><a href="flex-direction.html">flex-direction | 元素排列</a></li>'+
-        '            <li><a href="flex-wrap.html">flex-wrap | 元素换行</a></li>'+
-        '            <li><a href="order.html">order | 元素排序</a></li>'+
-        '            <li><a href="flex-grow.html">flex-grow | 剩余空间比例分配</a></li>'+
-        '            <li><a href="flex-shrink.html">flex-shrink | 超出宽度压缩比例分配</a></li>'+
+        '            <li><a href="justify-content.html">[父]justify-content | 水平分布方式</a></li>'+
+        '            <li><a href="align-items.html">[父]align-items | 垂直分布方式</a></li>'+
+        '            <li><a href="flex-direction.html">[父]flex-direction | 元素排列</a></li>'+
+        '            <li><a href="flex-wrap.html">[父]flex-wrap | 元素换行</a></li>'+
+        '            <li><a href="order.html">[子]order | 元素排序</a></li>'+
+        '            <li><a href="flex-grow.html">[子]flex-grow | 剩余空间比例分配</a></li>'+
+        '            <li><a href="flex-shrink.html">[子]flex-shrink | 超出宽度压缩比例分配</a></li>'+
+        '            <li><a href="flex-basis.html">[子]flex-basis | 超出宽度压缩比例分配</a></li>'+
+        '            <li><a href="layout-prize.html">[布局] 9宫格抽奖</a></li>'+
         '        </ul>'+
         '    </span>'+
         '</div>';

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>flex-basis</title>
+    <script src="js/flexible.js"></script>
+    <link rel="stylesheet" href="css/common.css">
+    <style>
+        .ct1 li{flex-basis:2.6667rem;}
+
+        .ct2{flex-direction: column;}
+        .ct2 li{flex-basis:2.6667rem;}
+    </style>
+</head>
+<body>
+    <h1>子元素主轴方向的尺寸(flex-basis)</h1>
+    <ol>
+        <li>默认值是auto</li>
+        <li>只有当父元素为flex时才有效</li>
+        <li>如果<code>flex-direction:row</code>，则水平方向就是主轴</li>
+        <li>如果<code>flex-direction:column</code>，则垂直方向才是主轴</li>
+        <li>在X为主轴时，如果使用带单位数值，则与width规则一致，如果同时有width属性，则优先使用flex-basis</li>
+        <li>在Y为主轴时，如果使用带单位数值，则与height规则一致，如果同时有height属性，则优先使用flex-basis</li>
+    </ol>
+    
+    <h2>父元素flex-direction:row时,flex-basis等同width</h2>
+    <ul class="container ct1" >
+        <li class="first">1</li>
+        <li class="second">2</li>
+        <li class="third">3</li>
+    </ul>
+    
+    <h2>父元素flex-direction:column,flex-basis等同height</h2>
+    <ul class="container ct2" >
+        <li class="first">1</li>
+        <li class="second">2</li>
+        <li class="third">3</li>
+    </ul>
+
+
+    <script src="js/com-nav.js"></script>
+</body>
+</html>
