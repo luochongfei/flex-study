@@ -1,0 +1,20 @@
+{
+  "name": "flex-study",
+  "version": "1.0.0-alpha.0",
+  "description": "[演示地址](https://luochongfei.github.io/flex-study/justify-content.html)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luochongfei/flex-study.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luochongfei/flex-study/issues"
+  },
+  "homepage": "https://github.com/luochongfei/flex-study#readme"
+}
